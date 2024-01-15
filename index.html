@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/quantity.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container text-center my-5">
+
+        <!-- Title Page -->
+        <div class="row">
+            <div class="col">
+                <div class="display-5">
+                    Menu - Faça A Sua Escolha
+                </div>
+            </div>
+        </div>
+
+        <!-- Title e SubTitle Prato Principal -->
+        <div class="row mt-5">
+            <div class="col">
+                <div class="display-6">
+                    Prato Principal
+                </div>
+                Todos os pratos acompanham arroz, feijão e a sobremesa do dia.
+            </div>
+        </div>
+
+        <!-- Cards Prato Principal -->
+        <div class="row justify-content-center gap-5 mt-3">
+            <div class="card p-0 pb-4 shadow-lg" style="width: 18rem;">
+                <img src="assets/bife.jpg" class="card-img-top" alt="bife">
+
+                <div class="card-body">
+                    <h5 class="card-title">Bife com batata</h5>
+                    <p class="card-text text-success">R$ 30,00</p>
+                </div>
+
+                <div class="quantity buttons_added">
+                    <input type="button" value="-" class="minus">
+                    <input type="number" step="1" min="0" max="" id="1" name="quantity" value="0" title="Qty"
+                        class="input-text qty text" size="4" pattern="" inputmode="">
+                    <input type="button" value="+" class="plus">
+                </div>
+            </div>
+
+            <div class="card p-0 pb-4 shadow-lg" style="width: 18rem;">
+                <img src="assets/coxa.jpg" class="card-img-top" alt="coxa">
+
+                <div class="card-body">
+                    <h5 class="card-title">Coxa de Frango Crocante</h5>
+                    <p class="card-text text-success">R$ 25,00</p>
+                </div>
+
+                <div class="quantity buttons_added">
+                    <input type="button" value="-" class="minus">
+                    <input type="number" step="1" min="0" max="" id="2" name="quantity" value="0" title="Qty"
+                        class="input-text qty text" size="4" pattern="" inputmode="">
+                    <input type="button" value="+" class="plus">
+                </div>
+            </div>
+
+            <div class="card p-0 pb-4 shadow-lg" style="width: 18rem;">
+                <img src="assets/panela.jpg" class="card-img-top" alt="panela">
+
+                <div class="card-body">
+                    <h5 class="card-title">Carne de Panela</h5>
+                    <p class="card-text text-success">R$ 22,00</p>
+                </div>
+
+                <div class="quantity buttons_added">
+                    <input type="button" value="-" class="minus">
+                    <input type="number" step="1" min="0" max="" id="3" name="quantity" value="0" title="Qty"
+                        class="input-text qty text" size="4" pattern="" inputmode="">
+                    <input type="button" value="+" class="plus">
+                </div>
+            </div>
+        </div>
+
+        <!-- Title e SubTitle Acompanhamento -->
+        <div class="row mt-5">
+            <div class="col">
+                <div class="display-6">
+                    Acompanhamentos
+                </div>
+                Porções para uma pessoa
+            </div>
+        </div>
+
+        <!-- Cards Prato Acompanhamento -->
+        <div class="row justify-content-center gap-5 mt-3">
+            <div class="card p-0 pb-4 shadow-lg" style="width: 18rem;">
+                <img src="assets/farofa.jpg" class="card-img-top" alt="farofa">
+
+                <div class="card-body">
+                    <h5 class="card-title">Farofa</h5>
+                    <p class="card-text text-success">R$ 10,00</p>
+                </div>
+
+                <div class="quantity buttons_added">
+                    <input type="button" value="-" class="minus">
+                    <input type="number" step="1" min="0" max="" id="4" name="quantity" value="0" title="Qty"
+                        class="input-text qty text" size="4" pattern="" inputmode="">
+                    <input type="button" value="+" class="plus">
+                </div>
+            </div>
+
+            <div class="card p-0 pb-4 shadow-lg" style="width: 18rem;">
+                <img src="assets/salad.jpg" class="card-img-top" alt="salada">
+
+                <div class="card-body">
+                    <h5 class="card-title">Salada</h5>
+                    <p class="card-text text-success">R$ 8,00</p>
+                </div>
+
+                <div class="quantity buttons_added">
+                    <input type="button" value="-" class="minus">
+                    <input type="number" step="1" min="0" max="" id="5" name="quantity" value="0" title="Qty"
+                        class="input-text qty text" size="4" pattern="" inputmode="">
+                    <input type="button" value="+" class="plus">
+                </div>
+            </div>
+
+            <div class="card p-0 pb-4 shadow-lg" style="width: 18rem;">
+                <img src="assets/torresmo.jpg" class="card-img-top" alt="torresmo">
+
+                <div class="card-body">
+                    <h5 class="card-title">Torresmo</h5>
+                    <p class="card-text text-success">R$ 12,00</p>
+                </div>
+
+                <div class="quantity buttons_added">
+                    <input type="button" value="-" class="minus">
+                    <input type="number" step="1" min="0" max="" id="6" name="quantity" value="0" title="Qty"
+                        class="input-text qty text" size="4" pattern="" inputmode="">
+                    <input type="button" value="+" class="plus">
+                </div>
+            </div>
+        </div>
+
+        <!-- Title e SubTitle Formulário -->
+        <div class="row bg-light shadow rounded mt-5 py-3">
+            <div class="col">
+                <div class="display-6">
+                    Dados Pessoais
+                </div>
+            </div>
+
+            <!-- Form -->
+            <form class="row g-3 text-start">
+                <div class="col-12 col-md-8 offset-md-2">
+                    <label for="name" class="form-label">Nome:</label>
+                    <input type="text" class="form-control" id="name" placeholder="Nome:">
+                </div>
+
+                <div class="col-12 col-md-8 offset-md-2 col-lg-4 offset-lg-2">
+                    <label for="phone" class="form-label">Telefone:</label>
+                    <input type="text" class="form-control" id="phone" placeholder="Telefone:">
+                </div>
+
+                <div class="col-12 col-md-8 offset-md-2 offset-0 col-lg-4 offset-lg-0">
+                    <label for="email" class="form-label">Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Email:">
+                </div>
+
+                <div class="d-grid col-6 mx-auto">
+                    <button class="btn btn-primary" type="button" onclick="calcular();">Calcular</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/quantity.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+
+    <script>
+        $("#phone").mask("(99) 9999-99999");
+    </script>
+</body>
+</html>
