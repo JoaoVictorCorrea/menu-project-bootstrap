@@ -19,25 +19,32 @@ function calcular() {
         currency: 'BRL',
     });
 
-    order.innerHTML = `<br><br>Caro <b>${name.value}</b> <br><br>
+    if (Array.from(quantities).filter(quantity => quantity.value != 0).length > 0) {
+        
+        order.innerHTML = `Caro <b>${name.value}</b> <br><br>
                        <p>Seguem os dados do seu pedido.</p>
                        <p>O seu pedido é:</p>
                        <ul>`;
 
-    for (var input of quantities) {
+        for (var input of quantities) {
 
-        var id = input.id;
+            var id = input.id;
 
-        if (input.value > 0) {
-            order.innerHTML += `<li>Prato: ${prods[id - 1].name} 
-            - Preço unitário: ${formatter.format(prods[id - 1].price)} 
-            - Quantidade: ${input.value} 
-            - Total: R$ ${formatter.format(input.value * prods[id - 1].price)}</li>`
-            
-            total += input.value * prods[id - 1].price;
+            if (input.value > 0) {
+                order.innerHTML += `<li>${prods[id - 1].name} 
+                - Preço: ${formatter.format(prods[id - 1].price)} 
+                - Quantidade: ${input.value} 
+                - Total: ${formatter.format(input.value * prods[id - 1].price)}</li>`
+                
+                total += input.value * prods[id - 1].price;
+            }
         }
-    }
 
-    order.innerHTML += `</ul> <br>
-                        <h3>Preço final ${formatter.format(total)}</h3>`;
+        order.innerHTML += `</ul> <br>
+                            <h3>Preço final ${formatter.format(total)}</h3>`;
+    }
+    else {
+        
+        order.innerHTML = `<h3 class='text-danger'>Selecione pelo menos um prato.</h3>`;
+    }
 }
